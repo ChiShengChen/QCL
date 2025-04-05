@@ -5,6 +5,9 @@ This repository contains the implementation of a Quantum Multimodal Contrastive 
 
 The framework leverages quantum computing techniques combined with multimodal contrastive learning to enhance EEG signal processing and analysis. By incorporating quantum layers within neural network architectures, the model achieves improved feature extraction and representation learning from EEG data.
 
+![image](https://github.com/user-attachments/assets/d88b39f4-343b-4ff6-ae46-612e04bf74a6)
+
+
 ## Project Structure
 
 ### Detailed Directory Structure
