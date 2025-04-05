@@ -1,47 +1,118 @@
-# MUSE_EEG
-The official repository implement of [Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning](https://arxiv.org/abs/2406.16910) . 
-We provide new types of EEG encoders and Similarity-Keeping Contrastive Learning framework to reach the SOTA on EEG-image zero-shot classification task.
-![paper_img_eeg_music_com_c](https://github.com/ChiShengChen/MUSE_EEG/assets/22126443/5099f629-4461-4455-99e2-220f6c9cedf2)
+# QuantumMUSE_EEG_2
 
-## Multimodal Similarity-Keeping ContrastivE (MUSE) Learning
-![paper_img_eeg_clip_corr](https://github.com/ChiShengChen/MUSE_EEG/assets/22126443/21cf141e-39f8-4344-9006-5b22a7d6266a)
-The details of the MUSE. (a.) The contrastive learning loss is calculated from EEG
-encoding and image encoding. (b.)(c.) The similarity-keeping loss comes from the final similarity of
-self-batch similarity of the input modal data.
-## New EEG encoder series
-![paper_img_model_c](https://github.com/ChiShengChen/MUSE_EEG/assets/22126443/bd584de7-87e1-486e-8344-0b88f8301fda)
+## Overview
+This repository contains the implementation of a Quantum Multimodal Contrastive Learning Framework for EEG data analysis and processing. The work has been successfully accepted for publication at ICASSP 2025.
 
-## Performance
-![MUSE_top1](https://github.com/ChiShengChen/MUSE_EEG/assets/22126443/42c02c49-9f00-4729-89d9-8235b6051a41)
-![MUSE_top5](https://github.com/ChiShengChen/MUSE_EEG/assets/22126443/b4f458c2-4003-4ed5-9cd8-91731e4e8a59)
+The framework leverages quantum computing techniques combined with multimodal contrastive learning to enhance EEG signal processing and analysis. By incorporating quantum layers within neural network architectures, the model achieves improved feature extraction and representation learning from EEG data.
 
-## Reference
-The code is modified based on [NICE_EEG](https://github.com/eeyhsong/NICE-EEG).
+## Project Structure
+
+### Detailed Directory Structure
+```
+QuantumMUSE_EEG_2/
+├── Data/
+│   └── Things-EEG2/
+│       ├── Preprocessed_data_250Hz/
+│       ├── DNN_feature_maps/
+│       └── Image_set/
+├── preprocessing/
+│   ├── get_center_images.py
+│   ├── preprocessing.py
+│   ├── preprocessing_utils.py
+│   └── __pycache__/
+├── model/
+│   ├── main_train.py
+│   ├── muse_eeg_model.py
+│   ├── qcl_train.py
+│   ├── test0_1_Proj_img_cls.pth
+│   ├── test0_1_Proj_eeg_cls.pth
+│   ├── test0_1_Enc_custom_eeg_cls.pth
+│   └── __pycache__/
+├── clipvit_feature_extraction/
+│   ├── center_fea_clip.py
+│   ├── feature_maps_clip.py
+│   └── obtain_feature_maps_clip.py
+├── results/
+│   ├── log_subject1.txt
+│   └── result.csv
+└── README.md
+```
+
+### Component Description
+- **Data/**: Contains the Things-EEG2 dataset with preprocessed EEG data, DNN feature maps, and image stimuli
+- **preprocessing/**: Scripts for EEG data preprocessing and utility functions
+- **model/**: Implementation of the quantum multimodal contrastive learning model
+  - *main_train.py*: Main training script
+  - *muse_eeg_model.py*: MUSE EEG model implementation
+  - *qcl_train.py*: Quantum contrastive learning training script
+  - *.pth files*: Pre-trained model weights
+- **clipvit_feature_extraction/**: Tools for extracting features using CLIP/ViT architectures
+- **results/**: Experimental results and model outputs
+
+## Key Features
+
+- **Quantum Neural Networks**: Integration of quantum computing techniques with traditional neural networks
+- **Multimodal Contrastive Learning**: Joint learning from EEG signals and visual/textual data
+- **CLIP/ViT Feature Extraction**: Leveraging pre-trained vision transformers for feature extraction
+- **State-of-the-art Performance**: Improved accuracy in EEG-based analysis and classification
+
+## Technical Details
+
+The framework implements quantum layers using PennyLane, a cross-platform Python library for quantum machine learning. The quantum layers are integrated within traditional neural network architectures to process EEG data.
+
+Key components include:
+- Quantum circuit implementation with parameterized gates
+- Quantum-enhanced feature extraction
+- Multimodal contrastive learning objectives
+- Integration with CLIP/ViT for vision-based feature extraction
+
+## Publication
+
+The framework introduced in this repository has been accepted to the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2025 as "Quantum Multimodal Contrastive Learning Framework".
+
+## Requirements
+
+```
+torch
+pennylane
+numpy
+scipy
+sklearn
+matplotlib
+open_clip_torch
+```
+
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/QuantumMUSE_EEG_2.git
+cd QuantumMUSE_EEG_2
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. Prepare your data in the Data/ directory
+
+4. Run the training script
+```bash
+python model/qcl_train.py
+```
 
 ## Citation
-Hope this code is helpful. I would appreciate you citing us in your paper, and the github.
-```
-@misc{chen2024muse_eeg,
-  author = {Chi-Sheng Chen},
-  title = {MUSE_EEG},
-  year = {2024},
-  version = {1.0},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/ChiShengChen/MUSE_EEG}},
-}
 
 ```
-```
-@misc{chen2024eegsk,
-  title = {Mind's Eye: Image Recognition by EEG via Multimodal Similarity-Keeping Contrastive Learning},
-  author = {Chen, Chi-Sheng and Wei, Chun-Shu},
-  year = {2024},
-  month = Jun,
-  number = {arXiv:2406.16910},
-  eprint = {2406.16910},
-  primaryclass = {cs, eess, q-bio},
-  publisher = {{arXiv}},
-  doi = {10.48550/arXiv.2406.16910},
-  archiveprefix = {arxiv}
+@inproceedings{quantummuse2025,
+  title={Quantum Multimodal Contrastive Learning Framework},
+  author={},
+  booktitle={ICASSP 2025 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2025},
 }
 ```
+
+## License
+
+[License information to be added] 
