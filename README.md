@@ -1,4 +1,4 @@
-# QuantumMUSE_EEG_2
+# QuantumMUSE_EEG
 
 ## Overview
 This repository contains the implementation of a Quantum Multimodal Contrastive Learning Framework for EEG data analysis and processing. The work has been successfully accepted for publication at ICASSP 2025.
