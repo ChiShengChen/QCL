@@ -109,14 +109,14 @@ python model/qcl_train.py
 ## Citation
 
 ```
-@inproceedings{quantummuse2025,
-  title={Quantum Multimodal Contrastive Learning Framework},
-  author={},
-  booktitle={ICASSP 2025 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+@INPROCEEDINGS{10889504,
+  author={Chen, Chi-Sheng and Tsai, Aidan Hung-Wen and Huang, Sheng-Chieh},
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Quantum Multimodal Contrastive Learning Framework}, 
   year={2025},
-}
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Portable document format},
+  doi={10.1109/ICASSP49660.2025.10889504}}
 ```
-
-## License
-
-[License information to be added] 
