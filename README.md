@@ -1,5 +1,5 @@
 # [ICASSP2025] QuantumMUSE_EEG
-[![arXiv](https://img.shields.io/badge/arXiv-2408.13919-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.13919)  
+[![arXiv](https://img.shields.io/badge/arXiv-2408.13919-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.13919)  [ICASSP2025](https://ieeexplore.ieee.org/document/10889504)
 
 ## Overview
 This repository contains the implementation of a "Quantum Multimodal Contrastive Learning Framework" for EEG-image data analysis and processing. The work has been successfully accepted for publication at ICASSP 2025.
