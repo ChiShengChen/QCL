@@ -3,7 +3,7 @@
 [ICASSP2025](https://ieeexplore.ieee.org/document/10889504)
 
 ## Overview
-This repository contains the implementation of a "Quantum Multimodal Contrastive Learning Framework" for EEG-image data analysis and processing. The work has been successfully accepted for publication at ICASSP 2025.
+This repository contains the implementation of a "[Quantum Multimodal Contrastive Learning Framework](https://ieeexplore.ieee.org/document/10889504)" for Quantum EEG-image data analysis and processing. The work has been successfully accepted for publication at ICASSP 2025.
 
 The framework leverages quantum computing techniques combined with multimodal contrastive learning to enhance EEG signal processing and analysis. By incorporating quantum layers within neural network architectures, the model achieves improved feature extraction and representation learning from EEG data.
 
